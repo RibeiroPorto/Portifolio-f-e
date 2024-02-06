@@ -1,0 +1,24 @@
+.menu{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu div{
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 10px 20px;
+
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+    background-color: rgba(150,210,254,0.8);
+    border: .8px solid grey;
+    padding: 8px 15px;
+    margin: 10px;
+    border-radius: 10px;
+
+}
