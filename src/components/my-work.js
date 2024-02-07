@@ -1,46 +1,60 @@
-import  { useState }  from 'react'
 import './my-work.css';
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+
+
+// import required modules
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 function Mywork() {
-    var current_order =['part0','part1','part2']
-    const [order01, setOrder01] = useState(current_order[0])
-    const [order02, setOrder02] = useState(current_order[1])
-    const [order03, setOrder03] = useState(current_order[2])
-    
-    function changerOrderPlus(){
-      current_order=[order01,order02,order03]
-      var temp = current_order.shift()
-      current_order.push(temp)
-      setOrders()   
-    }
-    function changerOrderMinus(){
-      current_order=[order01,order02,order03]
-      var temp = current_order.pop()
-      current_order.unshift(temp)
-      setOrders()
-    }
-    function setOrders(){
-      setOrder01(current_order[0])
-      setOrder02(current_order[1])
-      setOrder03(current_order[2])
-      
-    }
+  const progressCircle = useRef(null);
+  const progressContent = useRef(null);
+  const onAutoplayTimeLeft = (s, time, progress) => {
+    progressCircle.current.style.setProperty('--progress', 1 - progress);
+    progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
+  };
   return (
-    <>
-    <h3 className="mywork-title">Meu trabalho</h3>
-    <div className="mywork">
-        
-      <div className={`mywork-part ${order01}`} >1</div>
-      <div className={`mywork-part ${order02}`}  >2</div>
-      <div className={`mywork-part ${order03}`} >3</div>
-      
-
-    </div>
-    <div className='mywork-controls'>
-        <div onClick={changerOrderMinus}></div>
-        <div onClick={changerOrderPlus}></div>
-    </div>
-    </>
+    <section className='mywork'>
+      <h3>Meu trabalho</h3>
+      <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 3500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        onAutoplayTimeLeft={onAutoplayTimeLeft}
+        className="mySwiper"
+      >
+        <SwiperSlide>Slide 1</SwiperSlide>
+        <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide>Slide 4</SwiperSlide>
+        <SwiperSlide>Slide 5</SwiperSlide>
+        <SwiperSlide>Slide 6</SwiperSlide>
+        <SwiperSlide>Slide 7</SwiperSlide>
+        <SwiperSlide>Slide 8</SwiperSlide>
+        <SwiperSlide>Slide 9</SwiperSlide>
+        <div className="autoplay-progress" slot="container-end">
+          <svg viewBox="0 0 48 48" ref={progressCircle}>
+            <circle cx="24" cy="24" r="20"></circle>
+          </svg>
+          <span ref={progressContent}></span>
+        </div>
+      </Swiper>
+    </section>
   );
 }
 

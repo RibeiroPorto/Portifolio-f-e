@@ -4,7 +4,7 @@ import './top-menu.css'
 function Menu() {
   return (
     <div className="menu">
-        <div></div>
+        <div><i class="fas fa-globe-americas"></i></div>
       <a href='#contatos'>Contatos</a>
     </div>
   );
