@@ -18,12 +18,27 @@
 .projects-section>div{
     height: 100%;
     width: 30%;
-    background-color: grey;
+    background-color: white;
     transition: ease-in-out 0.4s;
     background-position: center;
-    background-size: cover;
+    background-size:130% 100%;
+    background-repeat: no-repeat;
     
+}
+.projects-section>div:last-child{
+    background-position:top left;
     
+}
+
+.projects-section>div>div:first-child{
+    background-position:bottom;
+    background-size: 100% 190% ;
+    background-repeat: no-repeat;
+}
+.projects-section>div>div:last-child{
+    background-position: center;
+    background-size: 50% 100% ;
+    background-repeat: no-repeat;
 }
 .projects-section div a{
     display: inline-block;
@@ -51,21 +66,18 @@
     
 }
 .projects-section>div:nth-child(2)>div{
-    
+    background-color: white;
     width: 100%;
     height: 45%;
-    background-color: grey;
     transition: ease-in-out 0.4s;
 
 }
 
 .projects-section>div:nth-child(1):hover{
     transform:scale(1.1);
-    background-color: grey;
 }
 .projects-section>div:nth-child(3):hover{
     transform:scale(1.1);
-    background-color: grey;
 }
 .projects-section>div:nth-child(2)>div:hover{
     transform:scale(1.1);
