@@ -5,12 +5,15 @@ import Contacts from '../components/contact-section';
 import './projetosCss.css'
 
 import reportWebVitals from '../reportWebVitals';
+import wip from '../components/media/icons/work-in-progress.png'
 
 function ProjetosOutros() {
     return (
       <>
       <Menu></Menu>
       <h2 className='main_title'>Outros Projetos</h2>
+      <h2 className='main_title'>Esta pagina está em contrução</h2>
+      <div className='work-in-progress'><img src={wip}></img></div>
       <Profile></Profile>
       <Contacts></Contacts>
       </>

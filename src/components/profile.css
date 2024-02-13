@@ -15,6 +15,10 @@
     border-radius: 300px;
     margin-right: 60px;
 }
+.photo img{
+    width: 100%;
+    height: auto;
+}
 .profile .info{
     padding-top: 30px ;
     width: auto;
@@ -32,6 +36,7 @@
 .profile .info a{
     text-decoration: none;
     border: .8px solid grey;
+    color: black;
     padding: 8px 15px;
     background-color: rgba(150,210,254,0.8);
     border-radius: 5px;

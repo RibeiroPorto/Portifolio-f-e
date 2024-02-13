@@ -38,9 +38,9 @@ function Mywork() {
         onAutoplayTimeLeft={onAutoplayTimeLeft}
         className="mySwiper"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide>Area em contrução</SwiperSlide>
+        <SwiperSlide>Area em contrução</SwiperSlide>
+        <SwiperSlide>Area em contrução</SwiperSlide>
     
         <div className="autoplay-progress" slot="container-end">
           <svg viewBox="0 0 48 48" ref={progressCircle}>

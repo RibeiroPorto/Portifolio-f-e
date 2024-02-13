@@ -7,11 +7,14 @@ import reportWebVitals from '../reportWebVitals';
 import './projetosCss.css'
 
 import imagem from '../components/media/projects/testeIMG.jpeg'
+import wip from '../components/media/icons/work-in-progress.png'
 function ProjetosFE() {
   return (
     <>
       <Menu></Menu>
       <h2 className='main_title'>Projetos Front End</h2>
+      <h2 className='main_title'>Esta pagina está em contrução</h2>
+      <div className='work-in-progress'><img src={wip}></img></div>
       <ProjectDetails
         img_path={imagem}
         title="titulo"
