@@ -1,0 +1,109 @@
+.project_detailed {
+    width: 95%;
+    height: 400px;
+
+    margin: 25px auto;
+    display: flex;
+    display: fle;
+}
+
+.project_detailed>img {
+    width: 28%;
+    height: 100%;
+    border-radius: 10px;
+    transition: ease-in-out .6s;
+    position: relative;
+    z-index: 2;
+}
+
+.project_detailed>img:hover {
+    transform: scale(1.1);
+}
+
+.project_detailed .project_description {
+    width: 72%;
+    height: 100%;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.project_detailed .project_description h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.project_detailed .project_description p {}
+
+.project_detailed .project_description .technologies {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex start;
+
+}
+
+.project_description .technologies p {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.project_detailed .project_description .technologies div {
+    margin: 0 15px;
+    text-align: center;
+}
+
+.project_detailed .project_description .technologies div img {
+    width: 30px;
+    height: 30px;
+}
+
+.project_detailed .project_description .links {
+    margin-top: auto;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+
+}
+
+.project_description .links div {
+    margin: 0 20px;
+    text-align: center;
+}
+
+.project_description .links div img {
+    width: 30px;
+    height: 30px;
+}
+
+.project_description .links div p {
+    display: none;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+}

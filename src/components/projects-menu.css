@@ -12,6 +12,7 @@
     display: flex;
     justify-content: space-evenly;
     margin: 100px auto;
+    
 }
 
 .projects-section>div{
@@ -19,6 +20,9 @@
     width: 30%;
     background-color: grey;
     transition: ease-in-out 0.4s;
+    background-position: center;
+    background-size: cover;
+    
     
 }
 .projects-section div a{
@@ -29,6 +33,7 @@
     text-decoration: none;
     color:black;
     position: relative;
+    box-shadow: 1px 1px 10px black;
     
 }
 .projects-section div a p{
