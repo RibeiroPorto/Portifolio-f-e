@@ -124,10 +124,10 @@
     }
 }
 
-@media (max-width:769px){
+@media (max-width:426px){
     .project_detailed{
         flex-direction: column;
-        height: 700px;
+        height: auto;
         width: 95%;
         
     }
@@ -146,6 +146,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;     
+    margin: 10px 0;     
     }
+     .project_detailed .project_description .technologies {
+        justify-content: space-evenly;
+        
+    }
+    .project_detailed .project_description .technologies div{
+        margin: 0;
+    }
+   
 }
