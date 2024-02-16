@@ -1,69 +1,94 @@
-.profile{
-    margin-top:20px;
+.profile {
+    margin-top: 20px;
     width: 100%;
     display: flex;
-    padding: 30px 150px;
+    padding: 0 150px;
     justify-content: space-between;
     margin-bottom: 150px;
     margin-top: 100px;
 }
-.profile .photo{
-    background-color:grey;
-    
+
+.profile .photo {
     min-width: 300px;
     height: 300px;
     border-radius: 300px;
     margin-right: 60px;
 }
-.photo img{
+
+.photo img {
     width: 100%;
     height: auto;
 }
-.profile .info{
-    padding-top: 30px ;
+
+.profile .info {
+    padding-top: 30px;
     width: auto;
-    height: 300px;
     margin-left: 20px;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
-.profile .info h3{
+
+.profile .info h3 {
     font-size: 2em;
     margin-bottom: 20px;
 }
-.profile .info p{
-    font-size: 1.5em;
+
+.profile .info p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
 }
-.profile .info a{
+
+.profile .info a {
     text-decoration: none;
     border: .8px solid grey;
     color: black;
     padding: 8px 15px;
-    background-color: rgba(150,210,254,0.8);
+    background-color: rgba(150, 210, 254, 0.8);
     border-radius: 5px;
-    position:absolute;
-    bottom:10px;
-    left: 10px;
+    margin-top: auto;
+
 }
 
-@media (max-width:769px){
-    .profile{
+@media (max-width:769px) {
+    .profile {
         padding: 10px 20px;
         margin-bottom: 50px;
     }
-    .profile .photo{
+
+    .profile .photo {
         margin-right: 20px;
     }
-    .profile .info{
+
+    .profile .info {
         margin-left: 10px;
         margin-right: 5px;
         height: 300px;
     }
-    .profile .info h3{
+
+    .profile .info h3 {
         font-size: 1.42em;
         text-align: justify;
     }
-    .profile .info p{
+
+    .profile .info p {
         font-size: 1.26em;
         text-align: justify;
+    }
+}
+
+@media (max-width:426px) {
+    .profile {
+        flex-direction: column;
+    }
+
+    .profile .photo {
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .profile .info a {
+        margin: 0 auto;
     }
 }

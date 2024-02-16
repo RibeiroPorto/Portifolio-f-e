@@ -111,3 +111,32 @@
         height: 47.5%;
     }
 }
+
+@media (max-width:426px){
+    .projects-section{
+    flex-direction: column;
+    width: 92%;
+    height: 450px;
+    }
+    .projects-section>div{
+        width: 100%;
+        height: 24%;
+    }
+    .projects-section>div:first-child{
+        order: 0;
+        background-size: 100% 190%;
+        
+    }
+    .projects-section>div:last-child{
+        order: 1;
+        
+        background-size: 100% 100%;
+    }
+    .projects-section>div:nth-child(2){
+        order: 2;
+        height: 48%;
+    }
+    .projects-section>div:nth-child(2)>div{
+        height: 49%;
+    }
+}
