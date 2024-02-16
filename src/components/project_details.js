@@ -1,5 +1,5 @@
 
-import "./projectDetails.css"
+import "./project_details.css"
 import htmlIcon from './media/icons/html.svg'
 import cssIcon from './media/icons/css.svg'
 import jsIcon from './media/icons/js.svg'

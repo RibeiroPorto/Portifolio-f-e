@@ -57,6 +57,13 @@
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-shadow: 2px 2px 100px white;
+    border: solid 1px rgba(128, 128, 128, 0.238);
+    border-radius: 10px;
+    padding: 0 4px;
+    
 }
 .projects-section>div:nth-child(2){
     background-color: rgba(0,0,0,0);
@@ -81,4 +88,26 @@
 }
 .projects-section>div:nth-child(2)>div:hover{
     transform:scale(1.1);
+}
+
+@media (max-width:769px){
+    .main-title{
+        font-size:1.5em;
+        margin-top:2em;
+        
+    }
+    .projects-section{
+        width: 99%;
+        margin: 40px auto;
+        height: 300px;
+    }
+    .projects-section>div{
+        width: 31%;
+    }
+    .projects-section>div:first-child a p{
+        width: 56%;
+    }
+    .projects-section>div:nth-child(2)>div{
+        height: 47.5%;
+    }
 }

@@ -44,3 +44,26 @@
     bottom:10px;
     left: 10px;
 }
+
+@media (max-width:769px){
+    .profile{
+        padding: 10px 20px;
+        margin-bottom: 50px;
+    }
+    .profile .photo{
+        margin-right: 20px;
+    }
+    .profile .info{
+        margin-left: 10px;
+        margin-right: 5px;
+        height: 300px;
+    }
+    .profile .info h3{
+        font-size: 1.42em;
+        text-align: justify;
+    }
+    .profile .info p{
+        font-size: 1.26em;
+        text-align: justify;
+    }
+}

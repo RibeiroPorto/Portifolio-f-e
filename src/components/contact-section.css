@@ -1,5 +1,5 @@
-.contacts{
-    
+.contacts {
+
     height: 300px;
     background-color: black;
     display: flex;
@@ -7,10 +7,11 @@
     justify-content: center;
     align-items: center;
     color: white;
-    border-top-left-radius:  500px;
-    border-top-right-radius:  500px;
+    border-top-left-radius: 500px;
+    border-top-right-radius: 500px;
 }
-.contacts>div{
+
+.contacts>div {
     width: 100%;
     height: 20%;
     display: flex;
@@ -18,42 +19,47 @@
     align-items: center;
     font-size: 2.5em;
 }
-.contacts>address{
+
+.contacts>address {
     font-size: 1.5em;
     width: 100%;
     height: 80%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    
+
 }
-.contacts>address a{
+
+.contacts>address a {
     text-decoration: none;
     color: white;
     text-align: center;
     font-size: .7em;
     transition: ease-in-out .5s;
-    
+
 }
-.contacts>address a i{
+
+.contacts>address a i {
     text-shadow: 1px 1px 30px rgba(0, 255, 255, 0.7);
     font-size: 3.5em;
 
 }
-.contacts>address a:hover{
+
+.contacts>address a:hover {
     color: aqua;
-    
+
 }
-.contacts>address a:hover p{
+
+.contacts>address a:hover p {
     text-shadow: 1px 1px 30px white;
 }
 
-.contacts>address a:hover i{
+.contacts>address a:hover i {
     text-shadow: 1px 1px 30px rgba(255, 255, 255, 0.704);
 }
 
-.social-networks{
-   
+.social-networks {
+
     background-color: black;
     width: 100%;
     height: 80px;
@@ -62,7 +68,8 @@
     justify-content: center;
 
 }
-.social-networks a{
+
+.social-networks a {
     margin: 0 20px;
     width: 50px;
     height: 50px;
@@ -73,11 +80,39 @@
     justify-content: center;
     font-size: 1.5em;
     color: aqua;
-    box-shadow:  5px 5px 30px aqua;
+    box-shadow: 5px 5px 30px aqua;
     transition: ease-in-out .5s;
 }
-.social-networks a:hover{
+
+.social-networks a:hover {
     background-color: white;
     color: black;
-    box-shadow:  5px 5px 30px white;
+    box-shadow: 5px 5px 30px white;
+}
+
+@media (max-width:769px) {
+    .contacts {
+        border-radius: 0;
+        height: 250px;
+    }
+
+    .contacts>div {
+        font-size: 1.5em;
+    }
+
+}
+
+@media (max-width:426px) {
+    .contacts>address {
+        flex-direction: column;
+    }
+    .contacts>address a{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 60%;
+    }
+    .contacts>address a i{
+        font-size:2em ;
+    }
 }
