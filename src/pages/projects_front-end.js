@@ -7,6 +7,7 @@ import reportWebVitals from '../reportWebVitals';
 import './projetosCss.css'
 
 import imagem from '../components/media/projects/testeIMG.jpeg'
+import imagem2 from '../components/media/projects/vishnu-mohanan-LC_SOISs-74-unsplash.jpg'
 import wip from '../components/media/icons/work-in-progress.png'
 function ProjetosFE() {
   return (
@@ -23,6 +24,16 @@ function ProjetosFE() {
         live=""
         git="">
         
+      </ProjectDetails>
+
+      <ProjectDetails
+      img_path={imagem2}
+      title='Projeto Arduino'
+      description='Projeto desenvolvido com arduino'
+      tecnologies={["python",'flask','React', 'css','html']}
+      live={'google.com'}
+      git={"#contatos"}
+      >
       </ProjectDetails>
 
       <Profile></Profile>

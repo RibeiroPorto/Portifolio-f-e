@@ -8,7 +8,7 @@ function Home() {
   return (
     <>
 
-      <Menu />
+      <Menu/>
       <Projects></Projects>
       <Profile />
       <Mywork/>
