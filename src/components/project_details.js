@@ -65,7 +65,7 @@ function ProjectDetails({ img_path, title, description, tecnologies, live, git }
                     <div>
                         <a href={live} className="tooltip">
                             <img src={liveIcon}></img>
-                            <span class="tooltiptext">Live website</span>
+                            <span className="tooltiptext">Live website</span>
 
                         </a>
                     </div>
@@ -73,7 +73,7 @@ function ProjectDetails({ img_path, title, description, tecnologies, live, git }
                         <a className="tooltip" href={git}>
                             <img src={gitIcon}>
                             </img>
-                            <span class="tooltiptext">Repositorio Git</span>
+                            <span className="tooltiptext">Repositorio Git</span>
                             <p></p>
                         </a>
                     </div>
