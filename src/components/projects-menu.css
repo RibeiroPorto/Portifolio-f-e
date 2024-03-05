@@ -113,10 +113,20 @@
 }
 
 @media (max-width:426px){
+    .projects-section>div:nth-child(1):hover{
+        transform:scale(1.03);
+    }
+    .projects-section>div:nth-child(3):hover{
+        transform:scale(1.03);
+    }
+    .projects-section>div:nth-child(2)>div:hover{
+        transform:scale(1.03);
+    }
+    
     .projects-section{
     flex-direction: column;
     width: 92%;
-    height: 450px;
+    height: 500px;
     }
     .projects-section>div{
         width: 100%;
@@ -126,17 +136,24 @@
         order: 0;
         background-size: 100% 190%;
         
+        margin-bottom:10px ;
+        
     }
     .projects-section>div:last-child{
         order: 1;
         
         background-size: 100% 100%;
+        
+        margin-bottom:10px ;
     }
     .projects-section>div:nth-child(2){
         order: 2;
         height: 48%;
+
     }
     .projects-section>div:nth-child(2)>div{
         height: 49%;
+        
+        margin-bottom:10px ;
     }
 }

@@ -20,7 +20,7 @@ function Menu() {
         <a href='#contatos'>Contatos</a>
       </div>
 
-      <a className="go-top" href='#menu' style={{ visibility: visibility }}>^</a>
+      <a className="go-top" href='#menu' style={{ visibility: visibility }}><i class="fas fa-arrow-up"></i></a>
     </>
   );
 }
