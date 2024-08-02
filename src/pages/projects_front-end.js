@@ -21,7 +21,7 @@ function ProjetosFE() {
       <ProjectDetails
         img_path={countries}
         title="Countries API"
-        description="Nesse projeto eu implementei um sistema que faz consultas à uma API, obtendo dados sobre os paises do mundo e exibe os dados de formaorganizada para o bom intendimento do usuario."
+        description="Nesse projeto eu implementei um sistema que faz consultas à uma API, obtendo dados sobre os paises do mundo e exibe os dados de forma organizada para o bom entendimento do usuario."
         tecnologies={["HTML","CSS","JS", "React", ]}
         live="https://countries-api-lei4dmoss-ribeiroportos-projects.vercel.app/"
         git="https://github.com/RibeiroPorto/countries-api-fem.git">

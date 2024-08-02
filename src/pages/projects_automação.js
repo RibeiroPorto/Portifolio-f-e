@@ -11,7 +11,7 @@ function ProjetosAuto() {
       <>
       <Menu></Menu>
       <h2 className='main_title'>Projetos de Automação</h2>
-      <h2 className='main_title'>Esta pagina está em contrução</h2>
+      <h2 className='main_title'>Esta pagina está em construção</h2>
       <div className='work-in-progress'><img src={wip}></img></div>
       
       <Profile></Profile>
