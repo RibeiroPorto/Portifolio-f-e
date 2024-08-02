@@ -4,15 +4,25 @@ import Profile from '../components/profile';
 import Contacts from '../components/contact-section';
 import './projetosCss.css'
 
+import ProjectDetails from '../components/project_details';
 import reportWebVitals from '../reportWebVitals';
-import wip from '../components/media/icons/work-in-progress.png'
+
+
+import projectmng from '../components/media/projects/projectmng.png'
 function ProjetosBE() {
     return (
       <>
       <Menu></Menu>
-      <h2 className='main_title'>Projetos Back End</h2>
-      <h2 className='main_title'>Esta pagina está em contrução</h2>
-      <div className='work-in-progress'><img src={wip}></img></div>
+      <ProjectDetails
+      img_path={projectmng}
+      title='Project Management System'
+      description='Este projeto, que ainda está em desenvolvimento, é um sistema de gerenciamento de projetos que estou desenvolvendo com implementação de banco de dados, gerenciamento de projetos e atividades por projeto, acompanhamento de progresso e agendamento de reuniões relacionadas aos projetos.
+      O sistema também possui sistema de login e criação de usuários e hierarquia de usuários.'
+      tecnologies={["HTML","CSS","JS","python", "flask"]}
+      live={'http://viniciuspr.pythonanywhere.com/'}
+      git={"https://github.com/RibeiroPorto/Project_Management_system"}
+      >
+      </ProjectDetails>
       <Profile></Profile>
       <Contacts></Contacts>
       </>
