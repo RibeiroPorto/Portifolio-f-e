@@ -12,6 +12,29 @@
   margin-bottom: 20px;
 }
 
+.mywork .swiper div.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.883);
+}
+.mywork .swiper div.content div:last-child{
+  height: 100%;
+  width:  50%;
+  text-align: center;
+  justify-content: center;
+}
+
+.mywork .swiper div.content div:last-child h3{
+  margin-top: 20%;
+  color: #fff;
+
+}
+.mywork .swiper div img{
+  width: 50%;
+  height: auto; 
+  padding: 20px;
+}
 .swiper {
   width: 100%;
   height: 100%;

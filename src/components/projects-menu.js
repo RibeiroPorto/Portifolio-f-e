@@ -6,7 +6,7 @@ import backgroundOutros from './media/idea-2558678_1280.jpg'
 function Projects(projects) {
   return (
     <>
-    <h2 className='main-title'>Soluções em sistemas de Informação e automação.</h2>
+    <h2 className='main-title'>Soluções em sistemas de Informação.</h2>
     <section className="projects-section">
         <div className='porjects' style={{backgroundImage:"url("+backgroundFE+")"}}>
           <a href="/front_end"> <p>Front end</p></a></div>

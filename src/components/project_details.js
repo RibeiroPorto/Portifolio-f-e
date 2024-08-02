@@ -63,14 +63,14 @@ function ProjectDetails({ img_path, title, description, tecnologies, live, git }
                 </div>
                 <div className="links">
                     <div>
-                        <a href={live} className="tooltip">
+                        <a href={live} className="tooltip" target="_blank">
                             <img src={liveIcon}></img>
                             <span className="tooltiptext">Live website</span>
 
                         </a>
                     </div>
                     <div>
-                        <a className="tooltip" href={git}>
+                        <a className="tooltip" href={git} target="_blank">
                             <img src={gitIcon}>
                             </img>
                             <span className="tooltiptext">Repositorio Git</span>

@@ -6,33 +6,44 @@ import ProjectDetails from '../components/project_details';
 import reportWebVitals from '../reportWebVitals';
 import './projetosCss.css'
 
-import imagem from '../components/media/projects/testeIMG.jpeg'
-import imagem2 from '../components/media/projects/vishnu-mohanan-LC_SOISs-74-unsplash.jpg'
-import wip from '../components/media/icons/work-in-progress.png'
+import countries from '../components/media/projects/countries.png'
+import apiAdress from '../components/media/projects/apiAdress.png'
+
+
+import landingPage from '../components/media/projects/landingPage.png'
+
 function ProjetosFE() {
   return (
     <>
       <Menu></Menu>
       <h2 className='main_title'>Projetos Front End</h2>
-      <h2 className='main_title'>Esta pagina está em contrução</h2>
-      <div className='work-in-progress'><img src={wip}></img></div>
+      
       <ProjectDetails
-        img_path={imagem}
-        title="titulo"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea corrupti doloribus numquam sit nemo debitis in fuga quis saepe eligendi amet, iusto, quidem libero modi commodi, tempora laborum provident quas."
-        tecnologies={["HTML", "React", "python",'flask', 'cv']}
-        live=""
-        git="">
+        img_path={countries}
+        title="Countries API"
+        description="Nesse projeto eu implementei um sistema que faz consultas à uma API, obtendo dados sobre os paises do mundo e exibe os dados de formaorganizada para o bom intendimento do usuario."
+        tecnologies={["HTML","CSS","JS", "React", ]}
+        live="https://countries-api-lei4dmoss-ribeiroportos-projects.vercel.app/"
+        git="https://github.com/RibeiroPorto/countries-api-fem.git">
         
       </ProjectDetails>
 
       <ProjectDetails
-      img_path={imagem2}
-      title='Projeto Arduino'
-      description='Projeto desenvolvido com arduino'
-      tecnologies={["python",'flask','React', 'css','html']}
-      live={'google.com'}
-      git={"#contatos"}
+      img_path={apiAdress}
+      title='IP adress tracker'
+      description='Nesse projeto desenvolvi um sistema que consulta uma api que identifica o endereço referente à um IP e exibe a localização no mapa.Passando por validações e formatações de dados.'
+      tecnologies={["HTML","CSS","JS" ]}
+      live={'https://ribeiroporto.github.io/Front-end-Mentor-Ip-Adress-Tracker/'}
+      git={"https://github.com/RibeiroPorto/Front-end-Mentor-Ip-Adress-Tracker.git"}
+      >
+      </ProjectDetails>
+      <ProjectDetails
+      img_path={landingPage}
+      title='Huddle landing page'
+      description='Esse projeto trate-se de uma simples demosntração de uma landing page que desenvolvi com HTML e CSS.'
+      tecnologies={["HTML","CSS" ]}
+      live={'https://ribeiroporto.github.io/FEM---Huddle-landing-page/'}
+      git={"https://github.com/RibeiroPorto/FEM---Huddle-landing-page"}
       >
       </ProjectDetails>
 

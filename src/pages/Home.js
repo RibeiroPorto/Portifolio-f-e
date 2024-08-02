@@ -11,8 +11,9 @@ function Home() {
     <>
 
       <Menu/>
-      <Projects></Projects>
       <Profile />
+      <Projects></Projects>
+      
       <Mywork/>
       <Contacts/>
 

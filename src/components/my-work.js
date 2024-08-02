@@ -13,6 +13,11 @@ import 'swiper/css/navigation';
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
+import countries from '../components/media/projects/countries.png'
+import ipAdress from '../components/media/projects/apiAdress.png'
+
+import landingPage from '../components/media/projects/landingPage.png'
+
 function Mywork() {
   const progressCircle = useRef(null);
   const progressContent = useRef(null);
@@ -38,9 +43,13 @@ function Mywork() {
         onAutoplayTimeLeft={onAutoplayTimeLeft}
         className="mySwiper"
       >
-        <SwiperSlide>Area em contrução</SwiperSlide>
-        <SwiperSlide>Area em contrução</SwiperSlide>
-        <SwiperSlide>Area em contrução</SwiperSlide>
+        <SwiperSlide><div className='content'><img src={countries} /> <div><h3>Countries API</h3>
+        </div></div>
+        </SwiperSlide>
+        <SwiperSlide><div className='content'><img src={ipAdress} /> <div><h3>IP adress tracker</h3>
+        </div></div></SwiperSlide>
+        <SwiperSlide><div className='content'><img src={landingPage} /> <div><h3>Huddle landing page</h3>
+        </div></div></SwiperSlide>
     
         <div className="autoplay-progress" slot="container-end">
           <svg viewBox="0 0 48 48" ref={progressCircle}>
